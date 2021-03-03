@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     # my apps
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
+    'orders.apps.OrdersConfig',
     # Django apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -68,6 +69,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # cart context processor
+                'cart.context_processors.cart',
             ],
         },
     },
