@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     # my apps
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
-    'orders.apps.OrdersConfig',
+    'orders.apps.OrdersConfig', 
     # Django apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -132,3 +132,17 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CART_SESSION_ID = 'cart'
+
+# Braintree settings
+BRAINTREE_MERCHANT_ID = 'bmtn473v595qnh3g'
+BRAINTREE_PUBLIC_KEY = 'nnc5h5w84vtyqrgf'
+BRAINTREE_PRIVATE_KEY = 'f54331cffebbbbe3c35db201640a0842'
+
+import braintree 
+
+BRAINTREE_CONF = braintree.Configuration(
+    braintree.Environment.Sandbox,
+    BRAINTREE_MERCHANT_ID,
+    BRAINTREE_PUBLIC_KEY,
+    BRAINTREE_PRIVATE_KEY
+)
