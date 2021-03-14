@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     # my apps
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
-    'orders.apps.OrdersConfig', 
+    'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig', 
     # Django apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -146,3 +147,5 @@ BRAINTREE_CONF = braintree.Configuration(
     BRAINTREE_PUBLIC_KEY,
     BRAINTREE_PRIVATE_KEY
 )
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
