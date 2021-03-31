@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-28 20:46-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2021-03-30 15:47-0400\n"
+"PO-Revision-Date: 2021-03-30 16:34+0000\n"
+"Last-Translator: b'  <mmccauley4@outlook.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
 
 #: .\cart\forms.py:11 .\cart\templates\cart\cart_detail.html:16
 msgid "Quantity"
@@ -82,13 +83,37 @@ msgstr "Comprar"
 msgid "Coupon"
 msgstr "Cupon"
 
-#: .\myshop\settings.py:121
+#: .\myshop\settings.py:123
 msgid "English"
 msgstr "Ingles"
 
-#: .\myshop\settings.py:122
+#: .\myshop\settings.py:124
 msgid "Spanish"
 msgstr "Espanol"
+
+#: .\myshop\urls.py:24
+msgid "admin/"
+msgstr "admin"
+
+#: .\myshop\urls.py:25
+msgid "cart/"
+msgstr "carro"
+
+#: .\myshop\urls.py:26
+msgid "payment/"
+msgstr "pago"
+
+#: .\myshop\urls.py:27
+#, fuzzy
+#| msgid "Order"
+msgid "orders/"
+msgstr "Pedido"
+
+#: .\myshop\urls.py:28
+#, fuzzy
+#| msgid "Coupon"
+msgid "coupons/"
+msgstr "Cupon"
 
 #: .\myshop_env\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
@@ -143,8 +168,8 @@ msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\core\validators.py:237
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\core\validators.py:246
@@ -329,15 +354,15 @@ msgstr ""
 #: .\myshop_env\Lib\site-packages\django\db\models\fields\__init__.py:1239
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\db\models\fields\__init__.py:1243
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\db\models\fields\__init__.py:1247
@@ -356,8 +381,8 @@ msgstr ""
 #: .\myshop_env\Lib\site-packages\django\db\models\fields\__init__.py:1536
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\db\models\fields\__init__.py:1539
@@ -512,7 +537,8 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: .\myshop_env\Lib\site-packages\django\forms\boundfield.py:150
 msgid ":?.!"
 msgstr ""
@@ -562,7 +588,8 @@ msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\forms\fields.py:549
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -666,7 +693,8 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\forms\models.py:1180
-msgid "Select a valid choice. That choice is not one of the available choices."
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\forms\models.py:1298
@@ -1145,11 +1173,11 @@ msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\views\csrf.py:124
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
-"\" …> for links to third-party sites."
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\views\csrf.py:132
@@ -1200,8 +1228,8 @@ msgstr ""
 #: .\myshop_env\Lib\site-packages\django\views\generic\dates.py:589
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\views\generic\dates.py:623
@@ -1260,10 +1288,10 @@ msgstr ""
 #: .\myshop_env\Lib\site-packages\django\views\templates\default_urlconf.html:369
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
-"\">DEBUG=True</a> is in your settings file and you have not configured any "
-"URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
 
 #: .\myshop_env\Lib\site-packages\django\views\templates\default_urlconf.html:384
@@ -1392,6 +1420,18 @@ msgstr ""
 #: .\myshop_env\Lib\site-packages\tornado\test\locale_test.py:74
 msgctxt "stick"
 msgid "club"
+msgstr ""
+
+#: .\payment\urls.py:8
+msgid "process/"
+msgstr ""
+
+#: .\payment\urls.py:9
+msgid "done/"
+msgstr ""
+
+#: .\payment\urls.py:10
+msgid "canceled/"
 msgstr ""
 
 #: .\shop\templates\shop\base.html:7 .\shop\templates\shop\base.html:12
